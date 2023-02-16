@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-16T09:39:09 IST" name="Default suite" finished-at="2023-02-16T09:39:22 IST" duration-ms="13651">
+  <suite started-at="2023-02-16T17:34:40 IST" name="Default suite" finished-at="2023-02-16T17:35:01 IST" duration-ms="20816">
     <groups>
     </groups>
-    <test started-at="2023-02-16T09:39:09 IST" name="Default test" finished-at="2023-02-16T09:39:22 IST" duration-ms="13651">
-      <class name="executeClass.CustomersPageTestClass">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClass.CustomersPageTestClass@4135c3b]" started-at="2023-02-16T09:39:09 IST" name="beforeMethod" finished-at="2023-02-16T09:39:13 IST" duration-ms="4571" status="PASS">
+    <test started-at="2023-02-16T17:34:40 IST" name="Default test" finished-at="2023-02-16T17:35:01 IST" duration-ms="20816">
+      <class name="executeClass.ProductPageTestClass">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClass.ProductPageTestClass@6302bbb1]" started-at="2023-02-16T17:34:40 IST" name="beforeMethod" finished-at="2023-02-16T17:34:45 IST" duration-ms="4808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToAddaNewCustomer()[pri:3, instance:executeClass.CustomersPageTestClass@4135c3b]" started-at="2023-02-16T09:39:13 IST" name="verifyToAddaNewCustomer" finished-at="2023-02-16T09:39:22 IST" duration-ms="8845" status="PASS">
+        <test-method signature="verifyProductPageIsOpenedWhileClickingProductTab()[pri:1, instance:executeClass.ProductPageTestClass@6302bbb1]" started-at="2023-02-16T17:34:45 IST" name="verifyProductPageIsOpenedWhileClickingProductTab" finished-at="2023-02-16T17:35:01 IST" duration-ms="15654" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyToAddaNewCustomer -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClass.CustomersPageTestClass@4135c3b]" started-at="2023-02-16T09:39:22 IST" name="afterMethod" finished-at="2023-02-16T09:39:22 IST" duration-ms="201" status="PASS">
+        </test-method> <!-- verifyProductPageIsOpenedWhileClickingProductTab -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClass.ProductPageTestClass@6302bbb1]" started-at="2023-02-16T17:35:01 IST" name="afterMethod" finished-at="2023-02-16T17:35:01 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- executeClass.CustomersPageTestClass -->
+      </class> <!-- executeClass.ProductPageTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
