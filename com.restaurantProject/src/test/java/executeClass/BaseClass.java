@@ -46,7 +46,7 @@ public class BaseClass {
 	
 	
  
-	@BeforeMethod
+	@BeforeMethod(groups = {"open"})
 	@Parameters({"browser"})
 	public void beforeMethod(String browserValue) throws IOException {
 		
@@ -68,7 +68,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"close"})
 	public void afterMethod(ITestResult itr) throws IOException {
 		
 		if(itr.getStatus()==ITestResult.FAILURE) 

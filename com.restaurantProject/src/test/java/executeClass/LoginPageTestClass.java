@@ -9,7 +9,7 @@ import elementRepository.LoginPage;
 public class LoginPageTestClass extends BaseClass {
 	//WebDriver driver;
 	LoginPage lp;
-  @Test(priority=1)
+  @Test(priority=1,groups = {"group-1"})
   public void verifyTheLoginPageIsLoadedWhileHittingTheUrl() throws InterruptedException {
 	  
 	  lp=new LoginPage(driver);
@@ -17,7 +17,7 @@ public class LoginPageTestClass extends BaseClass {
 	  Boolean actual=lp.isLoginTextDisplayed();
 	  Assert.assertTrue(actual);  
   }
-  @Test(priority=2)
+  @Test(priority=2,groups = {"group-1"})
   public void verifyTheRestaurantLogoIsDispalyed() {
 	  
 	  lp=new LoginPage(driver);
@@ -25,7 +25,7 @@ public class LoginPageTestClass extends BaseClass {
 	  Boolean actual=lp.isLogoDisplayed();
 	  Assert.assertTrue(actual);
   }
-  @Test(priority=3,dataProvider="successfullLogin",dataProviderClass=DataProviderClass.class)
+  @Test(priority=3,dataProvider="successfullLogin",dataProviderClass=DataProviderClass.class,groups = {"login-1"})
   public void verifySuccessFullLogin(String usName,String pwd) {
 	  
 	  lp=new LoginPage(driver);
@@ -38,7 +38,7 @@ public class LoginPageTestClass extends BaseClass {
 	  String actual=lp.getTextOfAdminName();
 	  Assert.assertEquals(actual,expected);
   }
-  @Test(priority=4,dataProvider="UnSuccessfullLogin",dataProviderClass=DataProviderClass.class)
+  @Test(priority=4,dataProvider="UnSuccessfullLogin",dataProviderClass=DataProviderClass.class,groups = {"login-2"})
   public void verifyUnSuccessFullLogin(String usName,String pwd) {
 	  
 	  lp=new LoginPage(driver);

@@ -15,8 +15,8 @@ public class ProductPageTestClass extends BaseClass {
 	LoginPage lp;
 	ProductPage pp;
 
-	@Test(priority = 1)
-	public void verifyProductPageIsOpenedWhileClickingProductTab() throws IOException {
+	@Test(priority = 1,groups = {"group-1"})
+	public void verifyProductPageIsOpenedWhileClickingProductTab() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 
@@ -29,8 +29,8 @@ public class ProductPageTestClass extends BaseClass {
 		Assert.assertTrue(actual);
 	}
 
-	@Test(priority = 2)
-	public void verifyAddNewProduct() throws IOException {
+	@Test(priority = 2,groups = {"add"})
+	public void verifyAddNewProduct() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 
@@ -63,8 +63,8 @@ public class ProductPageTestClass extends BaseClass {
 		Assert.assertEquals(actual, expected);
 
 	}
-	@Test(priority = 3)
-	public void verifySearchFunctionalityUsingProductName() throws IOException {
+	@Test(priority = 3,groups = {"search"})
+	public void verifySearchFunctionalityUsingProductName() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 
@@ -79,8 +79,8 @@ public class ProductPageTestClass extends BaseClass {
 		Assert.assertEquals(actual, expected);
 		
 	}
-	@Test(priority = 4)
-	public void verifySearchFunctionalityUsingProductCode() throws IOException {
+	@Test(priority = 4,groups = {"search"})
+	public void verifySearchFunctionalityUsingProductCode() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 
@@ -96,8 +96,8 @@ public class ProductPageTestClass extends BaseClass {
 		Assert.assertEquals(actual, expected);
 		
 	}
-	@Test(priority = 5)
-	public void verifyEditFunctionalityOfProduct() throws IOException {
+	@Test(priority = 5,groups = {"edit"})
+	public void verifyEditFunctionalityOfProduct() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 
@@ -119,8 +119,8 @@ public class ProductPageTestClass extends BaseClass {
 		Assert.assertTrue(actual);
 		
 	}
-	@Test(priority = 6)
-	public void verifyDeleteFunctionalityOfProduct() throws IOException {
+	@Test(priority = 6,groups = {"delete"})
+	public void verifyDeleteFunctionalityOfProduct() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		pp = new ProductPage(driver);
 

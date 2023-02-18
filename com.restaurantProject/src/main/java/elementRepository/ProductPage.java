@@ -75,7 +75,8 @@ public class ProductPage {
 	WebElement noMatchMessage;
 	
 	
-	public void clickProductTab() {
+	public void clickProductTab() throws InterruptedException {
+		gu.addThreadSleep();
 		gu.clickElement(productTab);
 	}
 	public boolean isProductTypeTextDisplayedInProductTab() {
