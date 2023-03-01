@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executeClass.CustomersPageTestClass">
+      <class name="executeClass.ProductPageTestClass">
         <methods>
-          <include name="verifyCustomersPageIsVisibleByClickingOnCutomerOnPeopleTab"/>
+          <include name="verifyEditFunctionalityOfProduct"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifySearchFunctionalityUsingProductName"/>
+          <include name="verifySearchFunctionalityUsingProductCode"/>
+          <include name="verifyAddNewProduct"/>
+          <include name="verifyProductPageIsOpenedWhileClickingProductTab"/>
+          <include name="verifyDeleteFunctionalityOfProduct"/>
         </methods>
-      </class> <!-- executeClass.CustomersPageTestClass -->
+      </class> <!-- executeClass.ProductPageTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

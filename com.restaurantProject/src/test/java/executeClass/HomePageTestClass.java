@@ -17,9 +17,10 @@ public class HomePageTestClass extends BaseClass{
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  
-	  lp.enterUserName(lp.readUserName(0, 1));
+	  /*lp.enterUserName(lp.readUserName(0, 1));
 	  lp.enterPassword(lp.readPassword(1, 1));
-	  lp.clickOnLoginButton();
+	  lp.clickOnLoginButton();*/
+	  lp.login();
 	  
 	  Boolean actual=hp.isProductTabDisplayed();
 	  Assert.assertTrue(actual);
@@ -30,9 +31,7 @@ public class HomePageTestClass extends BaseClass{
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  
-	  lp.enterUserName(lp.readUserName(0, 1));
-	  lp.enterPassword(lp.readPassword(1, 1));
-	  lp.clickOnLoginButton();
+	  lp.login();
 	  
 	  Boolean actual=hp.isD4StoreDisplayed();
 	  Assert.assertTrue(actual);
@@ -43,9 +42,7 @@ public class HomePageTestClass extends BaseClass{
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  
-	  lp.enterUserName(lp.readUserName(0, 1));
-	  lp.enterPassword(lp.readPassword(1, 1));
-	  lp.clickOnLoginButton();
+	  lp.login();     //method is created in loginpage for username ,password,and click
 	  
 	  hp.logoutButtonClickableOrNot();
 	  

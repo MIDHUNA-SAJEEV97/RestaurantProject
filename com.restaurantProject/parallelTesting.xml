@@ -7,14 +7,14 @@
 	<test thread-count="5" name="ParallelTest" parallel="tests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="executeClass.LoginPageTestClass" />
-			<class name="executeClass.HomePageTestClass" />
+			<!--  <class name="executeClass.LoginPageTestClass" />-->
+			<!--<class name="executeClass.HomePageTestClass" />-->
 			<class name="executeClass.ProductPageTestClass" />
-			<class name="executeClass.WaitersPageTestClass" />
-			<class name="executeClass.CustomersPageTestClass" />
+			<!-- <class name="executeClass.WaitersPageTestClass" />
+		 	<class name="executeClass.CustomersPageTestClass" />
 			<class name="executeClass.StoresPageTestClass" />
 			<class name="executeClass.SalesPageTestClass" />
-			<class name="executeClass.ExpensePageTestClass" />
+			<class name="executeClass.ExpensePageTestClass" />-->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

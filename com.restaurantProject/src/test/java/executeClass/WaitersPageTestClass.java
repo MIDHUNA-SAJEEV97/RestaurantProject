@@ -18,9 +18,7 @@ public class WaitersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		wp = new WaitersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		wp.clickOnPeopleTab();
 		wp.clickOnWaitersTabInPeopleTab();
@@ -32,9 +30,7 @@ public class WaitersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		wp = new WaitersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		wp.clickOnPeopleTab();
 		wp.clickOnWaitersTabInPeopleTab();
@@ -46,9 +42,7 @@ public class WaitersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		wp = new WaitersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		wp.clickOnPeopleTab();
 		wp.clickOnWaitersTabInPeopleTab();
@@ -71,9 +65,7 @@ public class WaitersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		wp = new WaitersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		wp.clickOnPeopleTab();
 		wp.clickOnWaitersTabInPeopleTab();
@@ -87,10 +79,8 @@ public class WaitersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		wp = new WaitersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
-
+		lp.login();
+		
 		wp.clickOnPeopleTab();
 		wp.clickOnWaitersTabInPeopleTab();
 		wp.searchAWaiterByMobileNUmber("789654123");

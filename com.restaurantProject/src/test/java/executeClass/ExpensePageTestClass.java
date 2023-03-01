@@ -18,9 +18,7 @@ public class ExpensePageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		ep = new ExpensePage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 	    ep.expensePageVisibleByClickingExpenseTab();
 		
@@ -32,9 +30,7 @@ public class ExpensePageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		ep = new ExpensePage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 	    ep.expensePageVisibleByClickingExpenseTab();
 		

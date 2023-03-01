@@ -7,6 +7,7 @@ import utilities.ScreenShotClass;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -47,9 +48,9 @@ public class BaseClass {
 	
  
 	@BeforeMethod(groups = {"open"})
-	@Parameters({"browser"})
-	public void beforeMethod(String browserValue) throws IOException {
-		
+	@Parameters({"browser"})             
+	public void beforeMethod(@Optional("chrome") String browserValue) throws IOException {
+		                                    //@Optional("chrome") for running the tests in its own testclasses individually
 		readProperty();    //to load url
 		
 		if(browserValue.equalsIgnoreCase("chrome"))

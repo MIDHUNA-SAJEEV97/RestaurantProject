@@ -71,5 +71,11 @@ public class LoginPage {
 	public String readPassword(int row,int col) throws IOException {
 		return ExcelReadClass.readStringData(row, col);
 	}
+	public void login() throws IOException {
+		 enterUserName(readUserName(0,1));    //data from excel
+	     enterPassword(readPassword(1,1));
+		 clickOnLoginButton();
+		
+	}
 	
 }

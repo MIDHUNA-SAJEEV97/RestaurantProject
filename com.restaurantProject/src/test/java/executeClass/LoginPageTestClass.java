@@ -1,5 +1,7 @@
 package executeClass;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,7 +9,7 @@ import org.testng.annotations.Test;
 import elementRepository.LoginPage;
 
 public class LoginPageTestClass extends BaseClass {
-	//WebDriver driver;
+	
 	LoginPage lp;
   @Test(priority=1,groups = {"group-1"})
   public void verifyTheLoginPageIsLoadedWhileHittingTheUrl() throws InterruptedException {
@@ -26,7 +28,7 @@ public class LoginPageTestClass extends BaseClass {
 	  Assert.assertTrue(actual);
   }
   @Test(priority=3,dataProvider="successfullLogin",dataProviderClass=DataProviderClass.class,groups = {"login-1"})
-  public void verifySuccessFullLogin(String usName,String pwd) {
+  public void verifySuccessFullLogin(String usName,String pwd) throws IOException {
 	  
 	  lp=new LoginPage(driver);
 	  

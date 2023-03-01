@@ -19,9 +19,10 @@ public class CustomersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		cp = new CustomersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		/*lp.enterUserName(lp.readUserName(0, 1));
+		  lp.enterPassword(lp.readPassword(1, 1));
+		  lp.clickOnLoginButton();*/
+		  lp.login();
 
 		cp.clickOnPeopleTab();
 		cp.clickOnCustomersTabInPeopleTab();
@@ -35,9 +36,7 @@ public class CustomersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		cp = new CustomersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		cp.clickOnPeopleTab();
 		cp.clickOnCustomersTabInPeopleTab();
@@ -50,9 +49,7 @@ public class CustomersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		cp = new CustomersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		cp.clickOnPeopleTab();
 		cp.clickOnCustomersTabInPeopleTab();
@@ -75,9 +72,7 @@ public class CustomersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		cp = new CustomersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		cp.clickOnPeopleTab();
 		cp.clickOnCustomersTabInPeopleTab();
@@ -92,9 +87,7 @@ public class CustomersPageTestClass extends BaseClass {
 		lp = new LoginPage(driver);
 		cp = new CustomersPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		cp.clickOnPeopleTab();
 		cp.clickOnCustomersTabInPeopleTab();

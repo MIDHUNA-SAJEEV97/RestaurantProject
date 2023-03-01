@@ -18,9 +18,7 @@ public class StoresPageTestClass extends BaseClass{
 		lp = new LoginPage(driver);
 		sp = new StoresPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 
 		sp.clickStoresTab();
 		Boolean actual = sp.isStorePageDisplayedByClickingStoreTab();
@@ -31,9 +29,7 @@ public class StoresPageTestClass extends BaseClass{
 		lp = new LoginPage(driver);
 		sp = new StoresPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 		
 		sp.clickStoresTab();
 		sp.clickOnAddStore();
@@ -52,9 +48,7 @@ public class StoresPageTestClass extends BaseClass{
 		lp = new LoginPage(driver);
 		sp = new StoresPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 		
 		sp.clickStoresTab();
 		sp.StoreNameSearchByUsingStoreName("midhuStores");
@@ -67,9 +61,7 @@ public class StoresPageTestClass extends BaseClass{
 		lp = new LoginPage(driver);
 		sp = new StoresPage(driver);
 
-		lp.enterUserName(lp.readUserName(0, 1));
-		lp.enterPassword(lp.readPassword(1, 1));
-		lp.clickOnLoginButton();
+		lp.login();
 		
 		sp.clickStoresTab();
 		Boolean actual=sp.isAddStoreButtonDisplayedOrNot();
